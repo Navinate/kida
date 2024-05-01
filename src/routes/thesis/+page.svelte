@@ -4,7 +4,7 @@
     import Link from "$lib/Link.svelte";
 </script>
 <svelte:head>
-    <title>Thesis</title>
+    <title>Trey Cluff - Thesis</title>
 </svelte:head>
 <main>
     <HeaderCard>My Masters Thesis</HeaderCard>

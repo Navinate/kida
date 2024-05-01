@@ -3,7 +3,7 @@
 import HeaderCard from "$lib/HeaderCard.svelte";
 </script>
 <svelte:head>
-    <title>Art</title>
+    <title>Trey Cluff - Art</title>
 </svelte:head>
 <main>
     <HeaderCard>My Art</HeaderCard>

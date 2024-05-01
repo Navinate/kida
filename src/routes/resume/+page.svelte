@@ -1,13 +1,11 @@
 <script lang="ts">
     import HeaderCard from "$lib/HeaderCard.svelte";
-    import Article from "$lib/Article.svelte";
-    import Link from "$lib/Link.svelte";
 </script>
 <svelte:head>
-    <title>Resume</title>
+    <title>Trey Cluff - Resumé</title>
 </svelte:head>
 <main>
-    <HeaderCard>My Resume</HeaderCard>
+    <HeaderCard>My Resumé</HeaderCard>
     <embed src="/resume.pdf" type="application/pdf" />
 </main>
 <style>

@@ -4,7 +4,7 @@
     import Link from "$lib/Link.svelte";
 </script>
 <svelte:head>
-    <title>Games</title>
+    <title>Trey Cluff - Games</title>
 </svelte:head>
 <main>
     <HeaderCard>My Games</HeaderCard>

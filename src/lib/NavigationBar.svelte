@@ -38,7 +38,7 @@
     <h1>Trey Cluff</h1>
     <ul>
         <a href="/" on:click={hideMenu}><li>About</li></a>
-        <a href="/resume" on:click={hideMenu}><li>Resume</li></a>
+        <a href="/resume" on:click={hideMenu}><li>Resumé</li></a>
         <a href="/thesis" on:click={hideMenu}><li>Thesis</li></a>
         <a href="/web" on:click={hideMenu}><li>Websites</li></a>
         <a href="/games" on:click={hideMenu}><li>Games</li></a>

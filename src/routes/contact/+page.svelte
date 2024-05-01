@@ -4,7 +4,7 @@
     import Link from "$lib/Link.svelte";
 </script>
 <svelte:head>
-    <title>Contact</title>
+    <title>Trey Cluff - Contact</title>
 </svelte:head>
 <main>
     <HeaderCard>Contact Me!</HeaderCard>

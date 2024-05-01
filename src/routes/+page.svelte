@@ -23,7 +23,7 @@
 
 </script>
 <svelte:head>
-    <title>Home</title>
+    <title>Trey Cluff</title>
     <meta name="description" content="Trey Cluff's personal website.">
     <meta name="keywords" content="Trey Cluff, Trey, Cluff, personal website, portfolio, creative technologist, immersive developer, creative coder, computational artist, interactivity specialist">
     <meta name="author" content="Trey Cluff">
