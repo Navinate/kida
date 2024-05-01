@@ -27,23 +27,30 @@
     });
 
     export let visible = false;
+    export let mobile = false;
+    function hideMenu(){
+        if(mobile) {
+            visible = false;
+        }
+    }
 </script>
 <nav>
     <h1>Trey Cluff</h1>
     <ul>
-        <a href="/"><li>About</li></a>
-        <a href="/thesis"><li>Thesis</li></a>
-        <a href="/web"><li>Websites</li></a>
-        <a href="/games"><li>Games</li></a>
-        <a href="/art"><li>Art</li></a>
-        <a href="/contact"><li>Contact</li></a>
+        <a href="/" on:click={hideMenu}><li>About</li></a>
+        <a href="/resume" on:click={hideMenu}><li>Resume</li></a>
+        <a href="/thesis" on:click={hideMenu}><li>Thesis</li></a>
+        <a href="/web" on:click={hideMenu}><li>Websites</li></a>
+        <a href="/games" on:click={hideMenu}><li>Games</li></a>
+        <a href="/art" on:click={hideMenu}><li>Art</li></a>
+        <a href="/contact" on:click={hideMenu}><li>Contact</li></a>
     </ul>
 </nav>
 <style>
     nav {
-        color: var(--canary);
+        color: var(--light-tan);
         border-radius: 30px;
-        border-color: var(--canary);
+        border-color: var(--tan);
         border-width: 2px;
         border-style: dashed;
         display: flex;
@@ -70,13 +77,13 @@
     }
     a {
         text-decoration: none; 
-        color: var(--canary);
+        color: var(--light-tan);
     }
     li {
         transform-origin: center;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 15px;
-        outline: 2px dashed var(--canary);
+        outline: 2px dashed var(--tan);
         outline-offset: -10px;
         padding: 15px;
         font-size: 2rem;
@@ -91,7 +98,7 @@
             margin: 0px;
             z-index: 100;
             background-image: url('/icons/loader.svg');
-            background-color: var(--chambray);
+            background-color: var(--dark-blue);
             padding: 10px;
             opacity: 1;
         }

@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --canary: rgb(252,252,106);
-    --chambray: rgb(55,81,144);
+    --dark-blue: #153448;
+    --blue: #3C5B6F;
+    --tan: #948979;
+    --light-tan: #DFD0B8;
 }
 
 * {
@@ -15,7 +17,7 @@
 }
 
 body {
-    background: var(--chambray);
+    background: var(--dark-blue);
     background-image: url('icons/loader.svg');
     background-position: center;
     background-repeat: repeat;

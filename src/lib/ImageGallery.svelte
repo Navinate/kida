@@ -25,11 +25,11 @@ function updateImage(direction: number) {
 <style>
     #image-container {
         width: 400px;
-        height: 400px;
+        aspect-ratio: 1/1;
         padding: 10px;
         position: relative;
         border-radius: 20px;
-        border: dashed 2px var(--canary);
+        border: dashed 2px var(--tan);
     }
 
     .navigation-arrow {
@@ -38,6 +38,10 @@ function updateImage(direction: number) {
         top: 50%;
         transform: translateY(-50%);
         z-index: 1;
+        transition-duration: 0.2s;
+    }
+    .navigation-arrow:hover {
+        filter: invert(1);
     }
     .left {
         left: 20px;
@@ -52,5 +56,10 @@ function updateImage(direction: number) {
         aspect-ratio: 1/1;
         transition-duration: 0.5s;
         border-radius: 15px;
+    }
+    @media (max-width: 768px) {
+        #image-container {
+            max-width: 300px;
+        }
     }
 </style>

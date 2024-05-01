@@ -2,11 +2,14 @@
     import NavigationBar from '$lib/NavigationBar.svelte';
     import { onMount } from 'svelte';
 
-    $: windowWidth = 0;
-    $: isMenuVisible = true;
+    $: windowWidth = 1000;
+    $: mobile = windowWidth < 768;
+    $: isMenuVisible = !mobile;
     onMount(() => {
+        windowWidth = window.innerWidth;
         window.addEventListener('resize', () => {
             windowWidth = window.innerWidth;
+            if(!mobile && !isMenuVisible) toggleMenuVisibility();
         });
     
     });
@@ -16,7 +19,7 @@
 </script>
 
 <div id="container">
-    <NavigationBar visible={isMenuVisible}></NavigationBar>
+    <NavigationBar visible={isMenuVisible} {mobile}></NavigationBar>
     <main>
         {#if windowWidth < 768}
             <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -35,20 +38,18 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0px auto;
         gap: 10px;
         padding: 5px;
     }
     main {
-        color: var(--canary);
+        color: var(--light-tan);
         border-radius: 30px;
-        border-color: var(--canary);
+        border-color: var(--tan);
         border-width: 2px;
         border-style: dashed;
-        display: grid;
-        place-items: center;
-        overflow: scroll;
+        overflow-y: scroll;
         padding: 10px;
     }
 
@@ -57,14 +58,16 @@
         height: 50px;
         padding: 10px;
         place-self: start;
-        border: 2px dashed var(--canary);
+        border: 2px dashed var(--tan);
         border-radius: 15px;
         margin-bottom: 10px;
         cursor: pointer;
+        backdrop-filter: blur(5px);
     }
+    
     #menu-button:active {
-        background-color: var(--canary);
-        border-color: var(--chambray);
+        background-color: var(--light-tan);
+        border-color: var(--dark-blue);
     }
     #menu-button img {
         width: 100%;

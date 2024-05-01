@@ -11,7 +11,7 @@
 <style>
     main {
         border-radius: 25px;
-        border: dashed 2px var(--canary);
+        border: dashed 2px var(--tan);
         padding: 10px;
         position: relative;
         backdrop-filter: blur(5px);
@@ -30,7 +30,7 @@
     }
 
     a h1 {
-        color: var(--canary);
+        color: var(--light-tan);
         position: absolute;
         top: 50%;
         left: 50%;

@@ -17,6 +17,6 @@
     a {
         cursor: pointer;
         font-size: 2rem;
-        color: var(--canary);
+        color: var(--light-tan);
     }
 </style>

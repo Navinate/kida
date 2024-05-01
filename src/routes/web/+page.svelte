@@ -14,7 +14,7 @@
     </Article>
     <Article projectTitle="Albers' Challenge" anchor="ac" projectImages={["/web/ac_1.jpg"]}>
         A fun little game I made while @ Purdue Hackers hack night. The goal is to guess the presented color even though it is being contrasted by random colors. The design is inspired by fun and Josef Albers' work.
-        <Link href="https://albers-challenge.vercel.app/" block={true}>Link</Link>
+        <Link href="https://albers.navinate.com" block={true}>Link</Link>
     </Article>
 </main>
 <style>

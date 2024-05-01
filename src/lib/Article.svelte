@@ -16,7 +16,7 @@
 </main>
 <style>
     main {
-        border: dashed 2px var(--canary);
+        border: dashed 2px var(--tan);
         border-radius: 25px;
         padding: 10px;
         backdrop-filter: blur(5px);
@@ -30,11 +30,19 @@
 
     article {
         padding: 10px;
-        border: dashed 2px var(--canary);
+        border: dashed 2px var(--tan);
         border-radius: 20px;
         font-size: 1.5rem;
+        overflow: scroll;
     }
     article:first-child {
         grid-column: 1 / span 2;
+    }
+    @media (max-width: 768px) {
+        div {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 </style>
