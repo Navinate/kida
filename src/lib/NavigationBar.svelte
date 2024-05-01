@@ -48,9 +48,9 @@
 </nav>
 <style>
     nav {
-        color: var(--light-tan);
+        color: var(--color-four);
         border-radius: 30px;
-        border-color: var(--tan);
+        border-color: var(--color-three);
         border-width: 2px;
         border-style: dashed;
         display: flex;
@@ -77,13 +77,13 @@
     }
     a {
         text-decoration: none; 
-        color: var(--light-tan);
+        color: var(--color-four);
     }
     li {
         transform-origin: center;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 15px;
-        outline: 2px dashed var(--tan);
+        outline: 2px dashed var(--color-three);
         outline-offset: -10px;
         padding: 15px;
         font-size: 2rem;
@@ -98,7 +98,7 @@
             margin: 0px;
             z-index: 100;
             background-image: url('/icons/loader.svg');
-            background-color: var(--dark-blue);
+            background-color: var(--color-one);
             padding: 10px;
             opacity: 1;
         }

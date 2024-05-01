@@ -11,7 +11,7 @@
 <style>
     main {
         border-radius: 25px;
-        border: dashed 2px var(--tan);
+        border: dashed 2px var(--color-three);
         padding: 10px;
         position: relative;
         backdrop-filter: blur(5px);
@@ -30,7 +30,7 @@
     }
 
     a h1 {
-        color: var(--light-tan);
+        color: var(--color-four);
         position: absolute;
         top: 50%;
         left: 50%;

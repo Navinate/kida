@@ -16,7 +16,7 @@
 </main>
 <style>
     main {
-        border: dashed 2px var(--tan);
+        border: dashed 2px var(--color-three);
         border-radius: 25px;
         padding: 10px;
         backdrop-filter: blur(5px);
@@ -30,7 +30,7 @@
 
     article {
         padding: 10px;
-        border: dashed 2px var(--tan);
+        border: dashed 2px var(--color-three);
         border-radius: 20px;
         font-size: 1.5rem;
         overflow: scroll;

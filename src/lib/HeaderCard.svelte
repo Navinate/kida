@@ -4,9 +4,9 @@
         width: 100%;
         height: fit-content;
         font-size: 5rem;
-        color: var(--light-tan);
+        color: var(--color-four);
         border-radius: 20px;
-        border: dashed 2px var(--tan);
+        border: dashed 2px var(--color-three);
         padding: 5px 10px;
         backdrop-filter: blur(5px);
         display: grid;

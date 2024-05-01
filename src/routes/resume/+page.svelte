@@ -23,7 +23,7 @@
         max-width: 100%;
         height: 100%;
         border-radius: 30px;
-        border: 2px dashed var(--tan);
+        border: 2px dashed var(--color-three);
         padding: 10px;
     }
 </style>

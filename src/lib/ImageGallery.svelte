@@ -29,7 +29,7 @@ function updateImage(direction: number) {
         padding: 10px;
         position: relative;
         border-radius: 20px;
-        border: dashed 2px var(--tan);
+        border: dashed 2px var(--color-three);
     }
 
     .navigation-arrow {

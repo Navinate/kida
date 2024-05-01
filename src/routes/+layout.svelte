@@ -44,9 +44,9 @@
         padding: 5px;
     }
     main {
-        color: var(--light-tan);
+        color: var(--color-four);
         border-radius: 30px;
-        border-color: var(--tan);
+        border-color: var(--color-three);
         border-width: 2px;
         border-style: dashed;
         overflow-y: scroll;
@@ -58,7 +58,7 @@
         height: 50px;
         padding: 10px;
         place-self: start;
-        border: 2px dashed var(--tan);
+        border: 2px dashed var(--color-three);
         border-radius: 15px;
         margin-bottom: 10px;
         cursor: pointer;
@@ -66,8 +66,8 @@
     }
     
     #menu-button:active {
-        background-color: var(--light-tan);
-        border-color: var(--dark-blue);
+        background-color: var(--color-four);
+        border-color: var(--color-one);
     }
     #menu-button img {
         width: 100%;
