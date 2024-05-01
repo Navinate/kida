@@ -16,6 +16,10 @@
 
 body {
     background: var(--chambray);
+    background-image: url('icons/loader.svg');
+    background-position: center;
+    background-repeat: repeat;
+
 }
 
 ::-webkit-scrollbar {

@@ -1,46 +1,45 @@
-<script>
-    export let title = "Title";
+<script lang="ts">
     export let image = "https://via.placeholder.com/150";
-    export let link = "https://www.google.com";
+    export let link = "/";
 </script>
 <a href={link}>
     <main>  
-        <img src={image} alt={title} />
-        <h1>{title}</h1>
+        <img src={image} alt="preview of project" />
+        <h1><slot></slot></h1>
     </main>
 </a>
 <style>
     main {
-        max-width: 100%;
-        aspect-ratio: 1/1;
-        font-size: 4rem;
-        color: var(--canary);
-        border-radius: 15px;
-        border-color: var(--canary);
-        border-width: 1px;
-        border-style: dashed;
-        display: grid;
-        grid-template-rows: 1fr 2fr;
+        border-radius: 25px;
+        border: dashed 2px var(--canary);
         padding: 10px;
         position: relative;
+        backdrop-filter: blur(5px);
+        display: grid;
+        place-items: center;
     }
 
-    img {
+    a img {
+        border-radius: 20px;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
+        transition-duration: 0.2s; 
+    }
+    a:hover img {
+        filter: brightness(0.2);
+        
     }
 
-    h1 {
+    a h1 {
+        color: var(--canary);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 2rem;
+        opacity: 0;
+        transition-duration: 0.2s;
     }
-
-    a {
-        text-decoration: none;
+    a:hover h1 {
+        opacity: 1; 
     }
 </style>

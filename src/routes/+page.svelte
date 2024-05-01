@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { onMount } from 'svelte';
 	import ArticleCard from "$lib/ArticleCard.svelte";
     import HeaderCard from "$lib/HeaderCard.svelte";
@@ -32,9 +32,10 @@
     <p>This website documents most of my work including my masters thesis, abstract art, and video games.</p>
     <subtitle>Below are some highlights :)</subtitle>
     <div id="article-grid">
-        <ArticleCard title="Masters Thesis" image="https://via.placeholder.com/150" link="/thesis#item1" />
-        <ArticleCard title="Abstract Art"   image="https://via.placeholder.com/150" link="/art#item2" />
-        <ArticleCard title="Video Games"    image="https://via.placeholder.com/150" link="/games#item1" />
+        <ArticleCard image="https://via.placeholder.com/200" link="/thesis">Masters Thesis</ArticleCard>
+        <ArticleCard image="/art/fractal_1.jpg" link="/art">Fractal Art</ArticleCard>
+        <ArticleCard image="https://via.placeholder.com/200" link="/games">Elder Angler</ArticleCard>
+        <ArticleCard image="/web/ac_1.jpg" link="/web#ac">Art Guessing Game</ArticleCard>
     </div>
 </main>
 
