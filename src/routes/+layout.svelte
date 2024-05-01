@@ -35,9 +35,8 @@
     #container{
         width: 100vw;
         height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
         max-width: 1200px;
         margin: 0px auto;
         gap: 10px;
@@ -72,5 +71,10 @@
     #menu-button img {
         width: 100%;
         height: 100%;
+    }
+    @media (max-width: 768px) {
+        #container {
+            grid-template-columns: 1fr;
+        }
     }
 </style>

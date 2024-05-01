@@ -8,7 +8,7 @@
         border-radius: 20px;
         border: dashed 2px var(--color-three);
         padding: 5px 10px;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(7px);
         display: grid;
         place-items: center start;
     }

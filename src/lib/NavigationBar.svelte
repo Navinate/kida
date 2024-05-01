@@ -57,7 +57,7 @@
         flex-direction: column;
         gap: 15px;
         min-width: 250px;
-        max-width: 300px;
+        max-width: 350px;
         overflow: scroll;
         padding: 10px;
         transition-duration: 1s;

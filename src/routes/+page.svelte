@@ -33,9 +33,11 @@
 <main>
     <HeaderCard>Hello,</HeaderCard>
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <p>I am {article} <span>{randomTitle}</span><br>who loves to solve creative problems with technology.</p>
-    <p>This website documents most of my work including my masters thesis, abstract art, and video games.</p>
-    <subtitle>Below are some highlights :)</subtitle>
+    <div id="intro-text">
+        <p>I am {article} <span>{randomTitle}</span><br>who loves to solve creative problems with technology.</p>
+        <p>This website documents most of my work including my masters thesis, abstract art, and video games.</p>
+        <p>Below are some highlights :)</p>
+    </div>
     <div id="article-grid">
         <ArticleCard image="https://via.placeholder.com/200" link="/thesis">Masters Thesis</ArticleCard>
         <ArticleCard image="/art/fractal_1.jpg" link="/art">Fractal Art</ArticleCard>
@@ -53,10 +55,12 @@
         justify-content: flex-start;
         gap: 20px;
     }
-    #article-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 10px;
+    
+    #intro-text {
+        border: dashed 2px var(--color-three);
+        border-radius: 20px;
+        padding: 10px;
+        backdrop-filter: blur(7px);
     }
     p {
         font-size: 1.5rem;
@@ -65,7 +69,9 @@
         text-decoration: underline;
         font-size: 2rem;
     }
-    subtitle {
-        font-size: 1.5rem;
+    #article-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
     }
 </style>

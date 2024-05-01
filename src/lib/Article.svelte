@@ -19,7 +19,7 @@
         border: dashed 2px var(--color-three);
         border-radius: 25px;
         padding: 10px;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(7px);
     }
     div {
         width: 100%;
