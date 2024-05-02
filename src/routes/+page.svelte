@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-	import ArticleCard from "$lib/ArticleCard.svelte";
+	import PreviewCard from "$lib/PreviewCard.svelte";
     import HeaderCard from "$lib/HeaderCard.svelte";
 
     let titles = ["Creative Technologist", "Immersive Developer", "Creative Coder", "Computational Artist", "Interactivity Specialist"];
@@ -39,10 +39,10 @@
         <p>Below are some highlights :)</p>
     </div>
     <div id="article-grid">
-        <ArticleCard image="https://via.placeholder.com/200" link="/thesis">Masters Thesis</ArticleCard>
-        <ArticleCard image="/art/fractal_1.jpg" link="/art">Fractal Art</ArticleCard>
-        <ArticleCard image="https://via.placeholder.com/200" link="/games">Elder Angler</ArticleCard>
-        <ArticleCard image="/web/ac_1.jpg" link="/web#ac">Art Guessing Game</ArticleCard>
+        <PreviewCard image="https://via.placeholder.com/200" link="/thesis">Masters Thesis</PreviewCard>
+        <PreviewCard image="/art/fractal_1.jpg" link="/art">Fractal Art</PreviewCard>
+        <PreviewCard image="https://via.placeholder.com/200" link="/games">Elder Angler</PreviewCard>
+        <PreviewCard image="/web/ac_1.jpg" link="/web#ac">Art Guessing Game</PreviewCard>
     </div>
 </main>
 

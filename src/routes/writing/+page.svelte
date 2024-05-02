@@ -1,0 +1,1 @@
+default writings home page

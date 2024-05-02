@@ -1,6 +1,6 @@
 <script lang="ts">
     import HeaderCard from "$lib/HeaderCard.svelte";
-    import Article from "$lib/Article.svelte";
+    import Highlight from "$lib/Highlight.svelte";
     import Link from "$lib/Link.svelte";
 </script>
 <svelte:head>
@@ -8,9 +8,9 @@
 </svelte:head>
 <main>
     <HeaderCard>My Masters Thesis</HeaderCard>
-    <Article projectTitle="COMING SOON">
+    <Highlight projectTitle="COMING SOON">
         This page is currently under construction.  In the meantime, check out my thesis <Link href="https://convocations.purdue.edu/stairwell/">here</Link>
-    </Article>
+    </Highlight>
 </main>
 <style>
     main {

@@ -39,10 +39,11 @@
     <ul>
         <a href="/" on:click={hideMenu}>       <li class="readable-background">About</li></a>
         <a href="/resume" on:click={hideMenu}> <li class="readable-background">Resumé</li></a>
-        <a href="/thesis" on:click={hideMenu}> <li class="readable-background">Thesis</li></a>
+        <a href="/writing/thesis" on:click={hideMenu}> <li class="readable-background">Thesis</li></a>
         <a href="/web" on:click={hideMenu}>    <li class="readable-background">Websites</li></a>
         <a href="/games" on:click={hideMenu}>  <li class="readable-background">Games</li></a>
         <a href="/art" on:click={hideMenu}>    <li class="readable-background">Art</li></a>
+        <a href="/writing" on:click={hideMenu}><li class="readable-background">Writing</li></a>
         <a href="/contact" on:click={hideMenu}><li class="readable-background">Contact</li></a>
     </ul>
 </nav>
