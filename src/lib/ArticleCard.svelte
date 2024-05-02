@@ -3,7 +3,7 @@
     export let link = "/";
 </script>
 <a href={link}>
-    <main>  
+    <main class="readable-background">  
         <img src={image} alt="preview of project" />
         <h1><slot></slot></h1>
     </main>
@@ -14,7 +14,6 @@
         border: dashed 2px var(--color-three);
         padding: 10px;
         position: relative;
-        backdrop-filter: blur(5px);
         display: grid;
         place-items: center;
     }

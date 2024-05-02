@@ -33,7 +33,7 @@
 <main>
     <HeaderCard>Hello,</HeaderCard>
     <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <div id="intro-text">
+    <div id="intro-text" class="readable-background">
         <p>I am {article} <span>{randomTitle}</span><br>who loves to solve creative problems with technology.</p>
         <p>This website documents most of my work including my masters thesis, abstract art, and video games.</p>
         <p>Below are some highlights :)</p>
@@ -60,7 +60,6 @@
         border: dashed 2px var(--color-three);
         border-radius: 20px;
         padding: 10px;
-        backdrop-filter: blur(7px);
     }
     p {
         font-size: 1.5rem;

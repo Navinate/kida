@@ -35,15 +35,15 @@
     }
 </script>
 <nav>
-    <h1>Trey Cluff</h1>
+    <h1 class="readable-background">Trey Cluff</h1>
     <ul>
-        <a href="/" on:click={hideMenu}><li>About</li></a>
-        <a href="/resume" on:click={hideMenu}><li>Resumé</li></a>
-        <a href="/thesis" on:click={hideMenu}><li>Thesis</li></a>
-        <a href="/web" on:click={hideMenu}><li>Websites</li></a>
-        <a href="/games" on:click={hideMenu}><li>Games</li></a>
-        <a href="/art" on:click={hideMenu}><li>Art</li></a>
-        <a href="/contact" on:click={hideMenu}><li>Contact</li></a>
+        <a href="/" on:click={hideMenu}>       <li class="readable-background">About</li></a>
+        <a href="/resume" on:click={hideMenu}> <li class="readable-background">Resumé</li></a>
+        <a href="/thesis" on:click={hideMenu}> <li class="readable-background">Thesis</li></a>
+        <a href="/web" on:click={hideMenu}>    <li class="readable-background">Websites</li></a>
+        <a href="/games" on:click={hideMenu}>  <li class="readable-background">Games</li></a>
+        <a href="/art" on:click={hideMenu}>    <li class="readable-background">Art</li></a>
+        <a href="/contact" on:click={hideMenu}><li class="readable-background">Contact</li></a>
     </ul>
 </nav>
 <style>
@@ -55,7 +55,7 @@
         border-style: dashed;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         min-width: 250px;
         max-width: 350px;
         overflow: scroll;
@@ -65,6 +65,9 @@
     }
     h1{
         font-size: 3rem;
+        border: dashed 2px var(--color-three);
+        border-radius: 25px;
+        padding: 10px;
     }
     ul{
         list-style-type: none;
@@ -76,19 +79,15 @@
         min-height: 100%;
     }
     a {
-        text-decoration: none; 
         color: var(--color-four);
+        font-size: 2rem;
     }
     li {
         transform-origin: center;
-        background-color: rgba(0, 0, 0, 0.3);
         border-radius: 15px;
-        outline: 2px dashed var(--color-three);
-        outline-offset: -10px;
-        padding: 15px;
-        font-size: 2rem;
-        transition-duration: 1s;
-        backdrop-filter: blur(5px);
+        border: dashed 2px var(--color-three);
+        padding: 10px;
+        transition-duration: 1.5s; 
     }
     @media (max-width: 768px) {
         nav {
@@ -100,10 +99,9 @@
             background-image: url('/icons/loader.svg');
             background-color: var(--color-one);
             padding: 10px;
-            opacity: 1;
+            max-width: 250px;
         }
         ul {
-            gap: 40px;
             padding: 20px 5px;
             border-radius: 15px;
         }
@@ -111,7 +109,6 @@
             outline-offset: -5px;
             padding: 10px;
             font-size: 2rem;
-            transition-duration: 1s;
         }
     }
 </style>

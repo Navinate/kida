@@ -24,7 +24,7 @@
         {#if windowWidth < 768}
             <!-- svelte-ignore a11y-click-events-have-key-events -->
             <!-- svelte-ignore a11y-no-static-element-interactions -->
-            <div id="menu-button" on:click={toggleMenuVisibility}>
+            <div id="menu-button" on:click={toggleMenuVisibility} class="readable-background">
                 <img src="/icons/menu.svg" alt="menu" />
             </div>
         {/if}
@@ -61,7 +61,6 @@
         border-radius: 15px;
         margin-bottom: 10px;
         cursor: pointer;
-        backdrop-filter: blur(5px);
     }
     
     #menu-button:active {
