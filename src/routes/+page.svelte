@@ -34,16 +34,19 @@
     <HeaderCard>Hello,</HeaderCard>
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div id="intro-text" class="readable-background">
-        <p>I am {article} <span>{randomTitle}</span><br>who loves to solve creative problems with technology.</p>
+        <p>I am {article} <span>{randomTitle}</span><br>and a recent graduate of Purdue University. I have experience in developing front-end applications using Svelte, TypeScript, and Processing, as well as creating immersive experiences using Unity and Godot.</p>
+        <br>
         <p>This website documents most of my work including my masters thesis, abstract art, and video games.</p>
+        <br>
         <p>Below are some highlights :)</p>
     </div>
     <div id="article-grid">
-        <PreviewCard image="https://via.placeholder.com/200" link="/thesis">Masters Thesis</PreviewCard>
+        <PreviewCard image="/thesis/night.jpg" link="/writing/thesis">Masters Thesis</PreviewCard>
         <PreviewCard image="/art/fractal_1.jpg" link="/art">Fractal Art</PreviewCard>
-        <PreviewCard image="https://via.placeholder.com/200" link="/games">Elder Angler</PreviewCard>
+        <PreviewCard image="games/elder_angler1.png" link="/games#ea">Elder Angler</PreviewCard>
         <PreviewCard image="/web/ac_1.jpg" link="/web#ac">Art Guessing Game</PreviewCard>
     </div>
+    <br>
 </main>
 
 <style>

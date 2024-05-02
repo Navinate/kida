@@ -20,6 +20,8 @@
 
     a img {
         border-radius: 20px;
+        object-fit: cover;
+        aspect-ratio: 1/1;
         width: 100%;
         transition-duration: 0.2s; 
     }

@@ -16,6 +16,7 @@ import HeaderCard from "$lib/HeaderCard.svelte";
     <Highlight projectTitle="Lenticular Confetti" anchor="confetti" projectImages={["/art/confetti_1.jpg", "/art/confetti_2.jpg", "/art/confetti_3.jpg", "/art/confetti_4.jpg"]}>
         Lenticular Confetti is a series of works that explore concentric circles and tranlucent layers to create fun, abstract, shapes that float on their own.  Made with Processing
     </Highlight>
+    <br>
 </main>
 <style>
     main {

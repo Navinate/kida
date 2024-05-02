@@ -11,7 +11,7 @@
     <Highlight projectTitle="Work In Progress" anchor="email">
         This page is currently under construction.  In the meantime, feel free to reach out to me on <Link href="https://www.linkedin.com/in/thomas-cluff/" block>LinkedIn</Link> or <Link href="https://twitter.com/treysnoise" block>Twitter</Link>
     </Highlight>
-
+    <br>
 </main>
 <style>
     main {

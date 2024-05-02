@@ -4,9 +4,15 @@
     export let projectTitle: string;
     export let projectImages: string[] = [];
     export let anchor: string = "";
+    export let fullText: string ="";
 </script>
 <main id="{anchor}" class="readable-background">
-    <h1>{projectTitle}</h1>
+    <div>
+        <h1>{projectTitle}</h1>
+        {#if fullText !== ""}
+            <a href={fullText}>Read More</a>
+        {/if}
+    </div>
     <div>
         {#if projectImages.length > 0}
             <ImageGallery images={projectImages} />
@@ -20,7 +26,12 @@
         border-radius: 25px;
         padding: 10px;
     }
-    div {
+    div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div:nth-child(2) {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -37,8 +48,13 @@
     article:first-child {
         grid-column: 1 / span 2;
     }
+    a {
+        font-size: 1.5rem;
+        color: var(--color-four);
+    }
+
     @media (max-width: 768px) {
-        div {
+        div:nth-child(2) {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;

@@ -5,7 +5,7 @@
         height: fit-content;
         font-size: 5rem;
         color: var(--color-four);
-        border-radius: 20px;
+        border-radius: 25px;
         border: dashed 2px var(--color-three);
         padding: 5px 10px;
         display: grid;

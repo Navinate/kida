@@ -16,6 +16,7 @@
         A fun little game I made while @ Purdue Hackers hack night. The goal is to guess the presented color even though it is being contrasted by random colors. The design is inspired by fun and Josef Albers' work.
         <Link href="https://albers.navinate.com" block={true}>Link</Link>
     </Highlight>
+    <br>
 </main>
 <style>
     main {
