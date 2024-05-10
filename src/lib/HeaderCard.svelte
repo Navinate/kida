@@ -5,8 +5,8 @@
         height: fit-content;
         font-size: 5rem;
         color: var(--color-four);
-        border-radius: 25px;
-        border: dashed 2px var(--color-three);
+        border-radius: var(--radius, 25px);;
+        border-width: 2px;
         padding: 5px 10px;
         display: grid;
         place-items: center start;

@@ -2,6 +2,8 @@
     import NavigationBar from '$lib/NavigationBar.svelte';
     import { onMount } from 'svelte';
 
+    export let radius: number = 0;
+
     $: windowWidth = 1000;
     $: mobile = windowWidth < 768;
     $: isMenuVisible = !mobile;
@@ -28,7 +30,7 @@
                 <img src="/icons/menu.svg" alt="menu" />
             </div>
         {/if}
-        <slot></slot>
+        <slot radius="{radius}px"></slot>
     </main>
 </div>
 <style>
@@ -44,10 +46,8 @@
     }
     main {
         color: var(--color-four);
-        border-radius: 30px;
-        border-color: var(--color-three);
+        border-radius: var(--radius, 30px);;
         border-width: 2px;
-        border-style: dashed;
         overflow-y: scroll;
         padding: 10px;
     }
@@ -57,8 +57,8 @@
         height: 50px;
         padding: 10px;
         place-self: start;
-        border: 2px dashed var(--color-three);
-        border-radius: 15px;
+        border-width: 2px;
+        border-radius: var(--radius, 15px);;
         margin-bottom: 10px;
         cursor: pointer;
     }

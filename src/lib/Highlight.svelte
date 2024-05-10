@@ -22,8 +22,8 @@
 </main>
 <style>
     main {
-        border: dashed 2px var(--color-three);
-        border-radius: 25px;
+        border-width: 2px;
+        border-radius: var(--radius, 25px);;
         padding: 10px;
     }
     div:first-child {
@@ -40,8 +40,8 @@
 
     article {
         padding: 10px;
-        border: dashed 2px var(--color-three);
-        border-radius: 20px;
+        border-width: 2px;
+        border-radius: var(--radius, 20px);;
         font-size: 1.5rem;
         overflow: scroll;
     }

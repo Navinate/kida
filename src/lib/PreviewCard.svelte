@@ -10,8 +10,8 @@
 </a>
 <style>
     main {
-        border-radius: 25px;
-        border: dashed 2px var(--color-three);
+        border-radius: var(--radius, 25px);;
+        border-width: 2px;
         padding: 10px;
         position: relative;
         display: grid;
@@ -19,7 +19,7 @@
     }
 
     a img {
-        border-radius: 20px;
+        border-radius: var(--radius, 20px);;
         object-fit: cover;
         aspect-ratio: 1/1;
         width: 100%;

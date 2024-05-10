@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --color-one: #153448;
+    /* --color-one: #153448;
     --color-two: #3C5B6F;
     --color-three: #948979;
-    --color-four: #DFD0B8;
+    --color-four: #DFD0B8; */
+    --color-one: #fffcf2;
+    --color-two: #ccc5b9;
+    --color-three: #403d39;
+    --color-four: #252422;
+    --radius: 5px;
 }
 
 * {
@@ -14,13 +19,15 @@
     font-family: "Courier Prime", monospace;
     font-weight: 400;
     font-style: normal;
+    border-style: solid;
+    border-color: var(--color-three);
+    border-width: 0px;
 }
 
 body {
     background: var(--color-one);
     background-image: url('icons/loader.svg');
-    background-position: center;
-    background-repeat: repeat;
+    background-repeat: round;
 
 }
 
@@ -32,4 +39,20 @@ body {
 .readable-background {
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-one: #252422;
+        --color-two: #403d39;
+        --color-three: #ccc5b9;
+        --color-four: #fffcf2;
+    }
+    body {
+        background-image: url('icons/light.svg');
+    }
+    .readable-background {
+        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.3);
+    }
 }

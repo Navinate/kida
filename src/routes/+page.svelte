@@ -3,7 +3,9 @@
 	import PreviewCard from "$lib/PreviewCard.svelte";
     import HeaderCard from "$lib/HeaderCard.svelte";
 
-    let titles = ["Creative Technologist", "Immersive Developer", "Creative Coder", "Computational Artist", "Interactivity Specialist"];
+    export let radius: number = 0;
+
+    let titles = ["Creative Coder", "Computational Artist", "Web Developer"];
 
     $: randomTitle = titles[Math.floor(Math.random() * titles.length)];
     $: article = "AEIOU".includes(randomTitle.charAt(0)) ? "an" : "a";
@@ -31,7 +33,7 @@
     <meta name="robots" content="index, follow">
 </svelte:head>
 <main>
-    <HeaderCard>Hello,</HeaderCard>
+    <HeaderCard --radius="{radius}px">Hello,</HeaderCard>
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div id="intro-text" class="readable-background">
         <p>I am {article} <span>{randomTitle}</span><br>and a recent graduate of Purdue University. I have experience in developing front-end applications using Svelte, TypeScript, and Processing, as well as creating immersive experiences using Unity and Godot.</p>
@@ -41,10 +43,10 @@
         <p>Below are some highlights :)</p>
     </div>
     <div id="article-grid">
-        <PreviewCard image="/thesis/night.jpg" link="/writing/thesis">Masters Thesis</PreviewCard>
-        <PreviewCard image="/art/fractal_1.jpg" link="/art">Fractal Art</PreviewCard>
-        <PreviewCard image="games/elder_angler1.png" link="/games#ea">Elder Angler</PreviewCard>
-        <PreviewCard image="/web/ac_1.jpg" link="/web#ac">Art Guessing Game</PreviewCard>
+        <PreviewCard --radius="{radius}px" image="/thesis/night.jpg" link="/writing/thesis">Masters Thesis</PreviewCard>
+        <PreviewCard --radius="{radius}px "image="/art/fractal_1.jpg" link="/art">Fractal Art</PreviewCard>
+        <PreviewCard --radius="{radius}px "image="games/elder_angler1.png" link="/games#ea">Elder Angler</PreviewCard>
+        <PreviewCard --radius="{radius}px "image="/web/ac_1.jpg" link="/web#ac">Art Guessing Game</PreviewCard>
     </div>
     <br>
 </main>
@@ -60,8 +62,8 @@
     }
     
     #intro-text {
-        border: dashed 2px var(--color-three);
-        border-radius: 20px;
+        border-width: 2px;
+        border-radius: var(--radius, 20px);
         padding: 10px;
     }
     p {

@@ -20,8 +20,8 @@
         width: 906px;
         max-width: 100%;
         height: 100%;
-        border-radius: 30px;
-        border: 2px dashed var(--color-three);
+        border-radius: var(--radius, 30px);;
+        border: 2px;
         padding: 10px;
     }
 </style>
