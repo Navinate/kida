@@ -36,8 +36,9 @@
 </script>
 <nav>
     <h1 class="readable-background">Trey Cluff</h1>
+    <br>
     <ul>
-        <a href="/" on:click={hideMenu}>       <li class="readable-background">About</li></a>
+        <a href="/" on:click={hideMenu}>      <li class="readable-background">About</li></a>
         <a href="/resume" on:click={hideMenu}> <li class="readable-background">Resumé</li></a>
         <a href="/writing/thesis" on:click={hideMenu}> <li class="readable-background">Thesis</li></a>
         <a href="/web" on:click={hideMenu}>    <li class="readable-background">Websites</li></a>

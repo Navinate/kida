@@ -63,7 +63,7 @@
     
     #intro-text {
         border-width: 2px;
-        border-radius: var(--radius, 20px);
+        border-radius: var(--radius, 0px);
         padding: 10px;
     }
     p {

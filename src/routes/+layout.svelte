@@ -30,8 +30,9 @@
                 <img src="/icons/menu.svg" alt="menu" />
             </div>
         {/if}
-        <slot radius="{radius}px"></slot>
+        <slot radius="{radius}px"></slot> 
     </main>
+    
 </div>
 <style>
     #container{
@@ -50,6 +51,7 @@
         border-width: 2px;
         overflow-y: scroll;
         padding: 10px;
+        display: grid;
     }
 
     #menu-button {
