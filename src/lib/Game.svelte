@@ -18,13 +18,13 @@
 </main>
 <style>
     main {
-        border-width: 2px;
-        border-radius: var(--radius, 25px);;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         padding: 10px;
     }
     :global(main iframe) {
-        border-width: 2px;
-        border-radius: var(--radius, 20px);;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         padding: 10px;
         margin-left: auto;
     }

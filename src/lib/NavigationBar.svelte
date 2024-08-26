@@ -51,8 +51,8 @@
 <style>
     nav {
         color: var(--color-four);
-        border-radius: var(--radius, 30px);;
-        border-width: 2px;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -65,8 +65,8 @@
     }
     h1{
         font-size: 3rem;
-        border-width: 2px;
-        border-radius: var(--radius, 25px);;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         padding: 10px;
     }
     ul{
@@ -84,8 +84,8 @@
     }
     li {
         transform-origin: center;
-        border-radius: var(--radius, 15px);;
-        border-width: 2px;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         padding: 10px;
         transition-duration: 1.5s; 
     }

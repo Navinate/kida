@@ -5,8 +5,8 @@
         height: fit-content;
         font-size: 5rem;
         color: var(--color-four);
-        border-radius: var(--radius, 25px);;
-        border-width: 2px;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         padding: 5px 10px;
         display: grid;
         place-items: center start;

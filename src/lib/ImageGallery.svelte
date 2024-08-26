@@ -28,8 +28,8 @@ function updateImage(direction: number) {
         aspect-ratio: 1/1;
         padding: 10px;
         position: relative;
-        border-radius: var(--radius, 20px);;
-        border-width: 2px;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
     }
 
     .navigation-arrow {

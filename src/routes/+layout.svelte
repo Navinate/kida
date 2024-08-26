@@ -47,8 +47,8 @@
     }
     main {
         color: var(--color-four);
-        border-radius: var(--radius, 30px);;
-        border-width: 2px;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         overflow-y: scroll;
         padding: 10px;
         display: grid;
@@ -59,8 +59,8 @@
         height: 50px;
         padding: 10px;
         place-self: start;
-        border-width: 2px;
-        border-radius: var(--radius, 15px);;
+        border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px);
         margin-bottom: 10px;
         cursor: pointer;
     }

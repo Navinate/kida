@@ -9,7 +9,8 @@
     --color-two: #ccc5b9;
     --color-three: #403d39;
     --color-four: #252422;
-    --radius: 0px;
+    --radius: 5px;
+    --border-width: 1px;
 }
 
 * {
@@ -38,7 +39,7 @@ body {
 }
 
 .readable-background {
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -53,7 +54,6 @@ body {
         background-image: url('icons/loader.svg');
     }
     .readable-background {
-        backdrop-filter: blur(5px);
         background-color: rgba(255, 255, 255, 0.3);
     }
 }
