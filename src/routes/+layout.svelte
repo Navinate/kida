@@ -47,8 +47,8 @@
     }
     main {
         color: var(--color-four);
-        border-width: var(--border-width, 0px);
-        border-radius: var(--radius, 0px);
+        /* border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px); */
         overflow-y: scroll;
         padding: 10px;
         display: grid;

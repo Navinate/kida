@@ -38,27 +38,27 @@
     <h1 class="readable-background">Trey Cluff</h1>
     <br>
     <ul>
-        <a href="/" on:click={hideMenu}>      <li class="readable-background">About</li></a>
-        <a href="/resume" on:click={hideMenu}> <li class="readable-background">Resumé</li></a>
-        <a href="/writing/thesis" on:click={hideMenu}> <li class="readable-background">Thesis</li></a>
-        <a href="/web" on:click={hideMenu}>    <li class="readable-background">Websites</li></a>
-        <a href="/games" on:click={hideMenu}>  <li class="readable-background">Games</li></a>
-        <a href="/art" on:click={hideMenu}>    <li class="readable-background">Art</li></a>
-        <a href="/writing" on:click={hideMenu}><li class="readable-background">Writing</li></a>
-        <a href="/contact" on:click={hideMenu}><li class="readable-background">Contact</li></a>
+        <a href="/" on:click={hideMenu}>                <li class="readable-background">About</li></a>
+        <a href="/resume" on:click={hideMenu}>          <li class="readable-background">Resumé</li></a>
+        <a href="/writing/thesis" on:click={hideMenu}>  <li class="readable-background">Thesis</li></a>
+        <a href="/web" on:click={hideMenu}>             <li class="readable-background">Websites</li></a>
+        <a href="/games" on:click={hideMenu}>           <li class="readable-background">Games</li></a>
+        <a href="/art" on:click={hideMenu}>             <li class="readable-background">Art</li></a>
+        <a href="/writing" on:click={hideMenu}>         <li class="readable-background">Writing</li></a>
+        <a href="/contact" on:click={hideMenu}>         <li class="readable-background">Contact</li></a>
     </ul>
 </nav>
 <style>
     nav {
         color: var(--color-four);
-        border-width: var(--border-width, 0px);
-        border-radius: var(--radius, 0px);
+        /* border-width: var(--border-width, 0px);
+        border-radius: var(--radius, 0px); */
         display: flex;
         flex-direction: column;
         gap: 20px;
         min-width: 250px;
         max-width: 350px;
-        overflow: scroll;
+        overflow: auto;
         padding: 10px;
         transition-duration: 1s;
         transform-origin: top right;
