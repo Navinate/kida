@@ -54,8 +54,11 @@ function updateImage(direction: number) {
         position: absolute;
         width: calc(100% - 20px);
         aspect-ratio: 1/1;
+        object-fit: cover;
+        overflow: hidden;
+        object-position: center;
         transition-duration: 0.5s;
-        border-radius: var(--radius, 15px);;
+        border-radius: var(--radius, 15px);
     }
     @media (max-width: 768px) {
         #image-container {

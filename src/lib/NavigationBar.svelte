@@ -35,24 +35,21 @@
     }
 </script>
 <nav>
-    <h1 class="readable-background">Trey Cluff</h1>
     <br>
     <ul>
-        <a href="/" on:click={hideMenu}>                <li class="readable-background">About</li></a>
-        <a href="/resume" on:click={hideMenu}>          <li class="readable-background">Resumé</li></a>
-        <a href="/writing/thesis" on:click={hideMenu}>  <li class="readable-background">Thesis</li></a>
-        <a href="/web" on:click={hideMenu}>             <li class="readable-background">Websites</li></a>
+        <a href="/" on:click={hideMenu}>                <li class="readable-background">Home</li></a>
+        <a href="/blog/thesis" on:click={hideMenu}>     <li class="readable-background">Thesis</li></a>
+        <a href="/web" on:click={hideMenu}>             <li class="readable-background">Web Apps</li></a>
         <a href="/games" on:click={hideMenu}>           <li class="readable-background">Games</li></a>
         <a href="/art" on:click={hideMenu}>             <li class="readable-background">Art</li></a>
-        <a href="/writing" on:click={hideMenu}>         <li class="readable-background">Writing</li></a>
+        <a href="/blog" on:click={hideMenu}>            <li class="readable-background">Blog</li></a>
         <a href="/contact" on:click={hideMenu}>         <li class="readable-background">Contact</li></a>
+        <a href="/resume" on:click={hideMenu}>          <li class="readable-background smol">(Outdated) Resumé</li></a>
     </ul>
 </nav>
 <style>
     nav {
         color: var(--color-four);
-        /* border-width: var(--border-width, 0px);
-        border-radius: var(--radius, 0px); */
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -62,12 +59,6 @@
         padding: 10px;
         transition-duration: 1s;
         transform-origin: top right;
-    }
-    h1{
-        font-size: 3rem;
-        border-width: var(--border-width, 0px);
-        border-radius: var(--radius, 0px);
-        padding: 10px;
     }
     ul{
         list-style-type: none;
@@ -88,6 +79,9 @@
         border-radius: var(--radius, 0px);
         padding: 10px;
         transition-duration: 1.5s; 
+    }
+    .smol {
+        font-size: 1.25rem;
     }
     @media (max-width: 768px) {
         nav {
@@ -115,7 +109,7 @@
 {#if !visible}
     <style>
         nav {
-            transform: translateX(150%) rotate(-45deg);
+            transform: translateX(150%);
         }
     </style>
 {/if}

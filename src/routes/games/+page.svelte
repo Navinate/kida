@@ -7,6 +7,10 @@
 </svelte:head>
 <main>
     <HeaderCard>My Games</HeaderCard>
+    <Game projectTitle="Skyscraper Heist" projectImages={["games/skyscraper2.png","games/skyscraper3.png","games/skyscraper4.png","games/skyscraper5.png", "games/skyscraper1.png"]}>
+        <p>This game was made for the 2024 GMTK game jam.  The theme was "Build at Scale" so I was inspired to make a game about traversing enviroments as different sizes.  You travel up 5 floors of a building before being shrunk to a minute size and must travel back down to escape.  All while avoiding security cameras and collecting money.</p>
+        <iframe title="Skyscraper Heist" frameborder="0" src="https://itch.io/embed/2902103" width="208" height="167"><a href="https://navinate.itch.io/gmtk2024">Skyscraper Heist by Navinate</a></iframe>
+    </Game>
     <Game projectTitle="Elder Angler" projectImages={["games/elder_angler1.png","games/elder_angler2.png","games/elder_angler3.png","games/elder_angler4.png","games/elder_angler5.png"]}>
         <p>I made this game in 5 days for the Fish Fest Game jam.  I had a lot of fun designing the main character and the enviromental hazards.  The game was made using Blender and Godot.  I tried to recreate a more retro PSX style graphics</p>
         <iframe title="Elder Angler" frameborder="0" src="https://itch.io/embed/2628186?dark=true" width="208" height="167"><a href="https://navinate.itch.io/elder-angler">Elder Angler by Navinate</a></iframe>
@@ -24,5 +28,8 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+    p {
+        font-size: 1.25rem;
     }
 </style>

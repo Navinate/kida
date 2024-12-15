@@ -31,7 +31,7 @@
     <meta name="robots" content="index, follow">
 </svelte:head>
 <main>
-    <HeaderCard>Hello,</HeaderCard>
+    <HeaderCard>Hello, I'm Trey</HeaderCard>
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div id="intro-text" class="readable-background">
         <p>I am {article} <span>{randomTitle}</span><br>and a recent graduate of Purdue University. I have experience in developing front-end applications using Svelte, TypeScript, and Processing, as well as creating immersive experiences using Unity and Godot.</p>
@@ -41,10 +41,11 @@
         <p>Below are some highlights :)</p>
     </div>
     <div id="article-grid">
-        <PreviewCard image="/thesis/night.jpg" link="/writing/thesis">Masters Thesis</PreviewCard>
+        <PreviewCard image="/thesis/night.jpg" link="/blog/thesis">Masters Thesis</PreviewCard>
         <PreviewCard image="/art/fractal_1.jpg" link="/art">Fractal Art</PreviewCard>
         <PreviewCard image="games/elder_angler1.png" link="/games#ea">Elder Angler</PreviewCard>
         <PreviewCard image="/web/ac_1.jpg" link="/web#ac">Art Guessing Game</PreviewCard>
+        <PreviewCard image="/burst/title.jpg" link="/blog/burst">Burst Show</PreviewCard>
     </div>
     <br>
 </main>
@@ -56,7 +57,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 20px;
+        gap: 10px;
     }
     
     #intro-text {
@@ -64,16 +65,15 @@
         border-radius: var(--radius, 0px);
         padding: 10px;
     }
-    p {
-        font-size: 1.5rem;
-    }
-    span {
-        text-decoration: underline;
-        font-size: 2rem;
-    }
     #article-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        #article-grid {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 </style>

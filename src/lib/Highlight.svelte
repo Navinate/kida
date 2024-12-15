@@ -42,7 +42,7 @@
         padding: 10px;
         border-width: var(--border-width, 0px);
         border-radius: var(--radius, 0px);
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         overflow: scroll;
     }
     article:first-child {
