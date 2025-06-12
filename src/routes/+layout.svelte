@@ -1,8 +1,12 @@
 <script lang="ts">
     import NavigationBar from '$lib/NavigationBar.svelte';
     import { onMount } from 'svelte';
+    import { injectAnalytics } from '@vercel/analytics/sveltekit'
+    import { dev } from '$app/environment';
 
     export let radius: number = 0;
+
+    injectAnalytics({ mode: dev ? 'development' : 'production' });
 
     $: windowWidth = 1000;
     $: mobile = windowWidth < 768;
