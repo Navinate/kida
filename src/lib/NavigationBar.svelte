@@ -67,7 +67,7 @@
         justify-content: flex-start;
         gap: 50px;
         width: 100%;
-        min-height: 100%;
+        min-height: 90%;
     }
     a {
         color: var(--color-four);
