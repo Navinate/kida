@@ -44,7 +44,7 @@
         <a href="/art" on:click={hideMenu}>             <li class="readable-background">Art</li></a>
         <a href="/blog" on:click={hideMenu}>            <li class="readable-background">Blog</li></a>
         <a href="/contact" on:click={hideMenu}>         <li class="readable-background">Contact</li></a>
-        <a href="/resume" on:click={hideMenu}>          <li class="readable-background smol">(Outdated) Resumé</li></a>
+        <a href="/resume" on:click={hideMenu}>          <li class="readable-background smol">Resumé</li></a>
     </ul>
 </nav>
 <style>

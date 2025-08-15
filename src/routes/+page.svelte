@@ -34,7 +34,7 @@
     <HeaderCard>Hello, I'm Trey</HeaderCard>
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div id="intro-text" class="readable-background">
-        <p>I am {article} <span>{randomTitle}</span><br>and a recent graduate of Purdue University. I have experience in developing front-end applications using Svelte, TypeScript, and Processing, as well as creating immersive experiences using Unity and Godot.</p>
+        <p>I am {article} <span>{randomTitle}</span><br>and a graduate of Purdue University. I have experience in developing front-end applications using Svelte, TypeScript, and Processing, as well as creating immersive experiences using Unity and Godot.</p>
         <br>
         <p>This website documents some of my work including my masters thesis, abstract art, and video games.</p>
         <br>
