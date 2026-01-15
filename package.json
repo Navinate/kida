@@ -28,5 +28,12 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.6.1"
+	},
+	"pnpm": {
+		"overrides": {
+			"esbuild": ">=0.25.0",
+			"js-yaml": ">=4.1.1",
+			"cookie": ">=0.7.0"
+		}
 	}
 }
